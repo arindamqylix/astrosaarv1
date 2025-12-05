@@ -1,0 +1,234 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Header section */
+.compatibility-header {
+  background-color: #fff4e8;
+  text-align: center;
+  padding: 60px 20px 40px;
+  min-height: 200px;
+}
+
+.compatibility-header h1 {
+  font-size: 32px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+.compatibility-header p {
+  font-size: 18px;
+  margin-top: 8px;
+  color: #555;
+  font-weight: 500;
+}
+
+/* Info section */
+.compatibility-info {
+  background-color: #fff;
+  max-width: 1400px;
+  margin: 24px auto;
+  padding: 40px 80px;
+}
+
+.compatibility-info h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Purple Talk section */
+.talk-section {
+  background-color: #6946aa;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.talk-left {
+  flex: 1 1 60%;
+}
+
+.talk-left h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.talk-buttons button {
+  background-color: white;
+  border: none;
+  padding: 10px 20px;
+  color: #6946aa;
+  font-weight: 600;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.talk-right img {
+  width: 150px;
+  max-width: 100%;
+}
+
+/* Description section */
+.compatibility-description {
+  max-width: 1400px;
+  margin: 24px auto;
+  padding: 40px 80px;
+  color: #333;
+}
+
+.compatibility-description p {
+  margin-bottom: 15px;
+}
+
+/* ---------------sign-section------------ */
+.sign-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  max-width: 750px;
+  margin: 50px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+.sign-box {
+  display: flex;
+  flex-direction: column; /* Label on top, select below */
+  align-items: flex-start; /* Keep label left aligned */
+  gap: 8px;
+}
+
+.sign-box label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 4px;
+  color: #333;
+}
+
+.sign-select {
+  display: flex;
+  align-items: center; /* Vertically center icon + select */
+  border-radius: 12px;
+  padding: 10px 16px;
+  gap: 12px;
+  background-color: #fff; /* Optional */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Optional */
+}
+
+.icon-circle {
+  background-color: #6d1486;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.icon-circle img {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 4px; /* less rounded corners */
+}
+
+
+.sign-select select {
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #333;
+  flex: 1;
+}
+
+.sign-select select:focus {
+  outline: none;
+}
+
+
+/* -----------------------------------
+   🔁 Responsive Styles (Mobile/Tablet)
+----------------------------------- */
+@media (max-width: 1024px) {
+  .compatibility-info,
+  .compatibility-description {
+    padding: 30px 40px;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .compatibility-header {
+    padding: 40px 15px 30px;
+  }
+
+  .compatibility-header h1 {
+    font-size: 24px;
+  }
+
+  .compatibility-header p {
+    font-size: 16px;
+  }
+
+  .compatibility-info,
+  .compatibility-description {
+    padding: 20px 20px;
+  }
+
+  .talk-section {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 15px;
+  }
+
+  .talk-left, .talk-right {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .talk-left h3 {
+    font-size: 16px;
+  }
+
+  .talk-buttons button {
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+
+}
+
+@media (max-width: 480px) {
+ 
+
+  .talk-buttons button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .talk-left h3 {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,103 @@
+/* Services Section */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.services-section {
+  background: #f8efd9;
+  padding: 50px 16px;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.services-title {
+ font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
+   font-family: "Playfair Display", serif;
+  color: #222;
+}
+
+/* Cards Layout - Desktop */
+.services-carousel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Service Card */
+.services-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(70, 67, 72, 0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 260px;
+  padding: 30px 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.services-card:hover {
+  box-shadow: 0 8px 28px rgba(112, 67, 168, 0.1);
+}
+
+/* Icon inside the card */
+.services-icon {
+  margin-bottom: 16px;
+}
+.services-icon svg,
+.services-icon img {
+  width: 60px;
+  height: 60px;
+}
+
+/* Service Name */
+.services-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Responsive: Mobile View */
+@media (max-width: 768px) {
+  .services-section {
+    padding: 40px 10px;
+  }
+
+  .services-title {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+
+  .services-carousel {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .services-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 16px;
+  }
+
+  .services-icon svg,
+  .services-icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .services-name {
+    font-size: 1.05rem;
+  }
+}

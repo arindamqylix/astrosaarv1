@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  color: #333;
+}
+.selector-strip {
+  /* background-color: #6a35f0; */
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.custom-dropdown {
+  position: relative;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.custom-dropdown .selected {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.custom-dropdown .selected img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.custom-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border-radius: 8px;
+  width: 100%;
+  display: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.custom-dropdown ul li {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.custom-dropdown ul li img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.custom-dropdown ul li:hover {
+  background: #f3f3f3;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 30px 20px 15px;
+   /* background-color: #faf6ef; */
+}
+.container{
+      background-color: white;
+      width: 100%;
+}
+.container {
+  display: flex;
+  gap: 20px;
+  width: 100%;        /* Full width */
+  margin: 0;          /* Remove auto centering */
+  padding: 0 15px;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.header p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-top: 5px;
+}
+.dropdown-list.show {
+  display: block;
+}
+
+.stars {
+  font-size: 1.2rem;
+  color: #d4af37;
+  margin-bottom: 5px;
+}
+
+/* Purple strip */
+/* .selector-strip {
+  background-color: #6a35f0;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+} */
+
+.dropdown-box {
+  background: white;
+  padding: 12px 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.zodiac-icon {
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+
+.dropdown-box select {
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Main Layout */
+.container {
+  display: flex;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #f8f1e3;
+  padding: 10px;
+  border-radius: 6px;
+  min-width: 220px;
+}
+
+.sidebar h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.sidebar ul li.active a {
+  font-weight: 600;
+}
+
+/* Content */
+.content {
+  /* background: white; */
+  padding: 20px;
+  border-radius: 6px;
+  flex: 1;
+}
+
+.content h2 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.date {
+  color: #8b7765;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.content h4 {
+  font-size: 1.1rem;
+  margin: 15px 0 8px;
+}
+
+.content p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    min-width: 100%;
+  }
+}

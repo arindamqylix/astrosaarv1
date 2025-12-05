@@ -1,0 +1,788 @@
+/* AstroSaar Theme Overrides for All Frontend Pages */
+
+/* ============================================
+   COLOR PALETTE
+   ============================================ */
+:root {
+    --primary-purple: #6d4ec6;
+    --primary-purple-dark: #5a3aa0;
+    --accent-gold: #e5b86a;
+    --accent-gold-light: #fef0c7;
+    --bg-cream: #fff9f0;
+    --bg-cream-light: #fdf5e6;
+    --bg-cream-section: #f8f0dc;
+    --text-dark: #2c1f0f;
+    --text-gray: #666;
+    --white: #ffffff;
+}
+
+/* ============================================
+   BODY AND BACKGROUND
+   ============================================ */
+body {
+    background-color: var(--bg-cream) !important;
+    font-family: "Poppins", sans-serif;
+    color: var(--text-dark);
+}
+
+.wrapper {
+    background-color: var(--bg-cream) !important;
+}
+
+/* ============================================
+   NAVBAR STYLING
+   ============================================ */
+.navbar {
+    background-color: var(--bg-cream) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.astroway-logo-text {
+    color: var(--primary-purple) !important;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.astroway-logo-subtext {
+    color: var(--text-gray) !important;
+    font-size: 11px;
+}
+
+/* ============================================
+   BUTTON STYLING
+   ============================================ */
+.btn-chat {
+    background-color: var(--primary-purple) !important;
+    color: var(--white) !important;
+    border-radius: 10px;
+    padding: 8px 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.btn-chat:hover {
+    background-color: var(--primary-purple-dark) !important;
+    color: var(--white) !important;
+}
+
+.btn-chat.other-country {
+    background-color: transparent !important;
+    color: var(--primary-purple) !important;
+    border: none !important;
+}
+
+.btn-chat.other-country:hover {
+    color: var(--primary-purple-dark) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-purple) !important;
+    border-color: var(--primary-purple) !important;
+    color: var(--white) !important;
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 10px 25px;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-purple-dark) !important;
+    border-color: var(--primary-purple-dark) !important;
+}
+
+.btn-secondary {
+    background-color: var(--accent-gold) !important;
+    border-color: var(--accent-gold) !important;
+    color: var(--text-dark) !important;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.btn {
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.view-more {
+    background-color: var(--primary-purple) !important;
+    color: var(--white) !important;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-weight: 600;
+}
+
+.view-more:hover {
+    background-color: var(--primary-purple-dark) !important;
+    color: var(--white) !important;
+}
+
+/* ============================================
+   FOOTER STYLING
+   ============================================ */
+.astroway-footer .bg-brown {
+    background-color: var(--primary-purple) !important;
+}
+
+.astroway-footer .bg-brown-dark {
+    background-color: var(--primary-purple-dark) !important;
+}
+
+.footer h4 {
+    color: var(--white) !important;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+}
+
+.footer a {
+    color: var(--white) !important;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: var(--accent-gold) !important;
+}
+
+/* ============================================
+   HEADINGS AND TYPOGRAPHY
+   ============================================ */
+.heading {
+    font-family: "Playfair Display", serif !important;
+    font-weight: 700 !important;
+    color: var(--text-dark) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", serif;
+    color: var(--text-dark);
+}
+
+h1 {
+    color: var(--primary-purple);
+}
+
+/* ============================================
+   CARDS AND SECTIONS
+   ============================================ */
+.bg-pink-light {
+    background-color: var(--bg-cream-section) !important;
+}
+
+.bg-pink {
+    background-color: var(--bg-cream-light) !important;
+}
+
+.bg-red {
+    background-color: var(--primary-purple) !important;
+}
+
+.bg-red-dark {
+    background-color: var(--primary-purple-dark) !important;
+}
+
+.card {
+    background-color: var(--white) !important;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.psychic-card,
+.expertOnline {
+    background-color: var(--white) !important;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.psychic-card:hover,
+.expertOnline:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================
+   LINKS
+   ============================================ */
+a {
+    color: var(--primary-purple);
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-purple-dark);
+    text-decoration: none;
+}
+
+.color-red {
+    color: var(--accent-gold) !important;
+}
+
+.color-pink-light {
+    color: var(--white) !important;
+}
+
+.colorblack {
+    color: var(--text-dark) !important;
+}
+
+/* ============================================
+   FORM ELEMENTS
+   ============================================ */
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+}
+
+.form-control:focus {
+    border-color: var(--primary-purple);
+    box-shadow: 0 0 0 0.2rem rgba(109, 78, 198, 0.25);
+    outline: none;
+}
+
+.form-select {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.form-select:focus {
+    border-color: var(--primary-purple);
+    box-shadow: 0 0 0 0.2rem rgba(109, 78, 198, 0.25);
+}
+
+/* ============================================
+   BREADCRUMBS
+   ============================================ */
+.astroway-breadcrumb {
+    background-color: var(--primary-purple) !important;
+}
+
+.breadcrumbs a {
+    color: var(--white) !important;
+}
+
+.breadcrumbs {
+    color: var(--white) !important;
+}
+
+/* ============================================
+   MENU SECTIONS
+   ============================================ */
+.astroway-menu {
+    background-color: var(--bg-cream-light) !important;
+}
+
+.astroway-menu .icon-desc {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+/* ============================================
+   ASTROLOGER CARDS
+   ============================================ */
+.astro-name {
+    color: var(--text-dark) !important;
+    font-weight: 600;
+}
+
+.filled-star {
+    color: var(--accent-gold) !important;
+}
+
+.empty-star {
+    color: #ddd !important;
+}
+
+/* ============================================
+   PRODUCT CARDS
+   ============================================ */
+.astroway-customer-stories .item,
+.astroway-blog .item {
+    background-color: var(--white) !important;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.astroway-customer-stories .item:hover,
+.astroway-blog .item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================
+   MODAL STYLING
+   ============================================ */
+.modal-content {
+    border-radius: 12px;
+    border: none;
+}
+
+.modal-header {
+    background-color: var(--bg-cream);
+    border-bottom: 1px solid #ddd;
+    border-radius: 12px 12px 0 0;
+}
+
+.modal-title {
+    color: var(--text-dark);
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+}
+
+/* ============================================
+   TABLES
+   ============================================ */
+.table {
+    background-color: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: var(--primary-purple);
+    color: var(--white);
+}
+
+.table tbody tr:hover {
+    background-color: var(--bg-cream);
+}
+
+/* ============================================
+   BADGES AND LABELS
+   ============================================ */
+.badge {
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-weight: 600;
+}
+
+.badge-danger {
+    background-color: var(--accent-gold) !important;
+    color: var(--text-dark) !important;
+}
+
+.status-badge {
+    border-radius: 50%;
+}
+
+/* ============================================
+   DROPDOWN MENUS
+   ============================================ */
+.dropdown-menu {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: none;
+    padding: 10px 0;
+}
+
+.dropdown-item {
+    padding: 8px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--bg-cream);
+    color: var(--primary-purple);
+}
+
+/* ============================================
+   PAGINATION
+   ============================================ */
+.pagination .page-link {
+    color: var(--primary-purple);
+    border-color: #ddd;
+    border-radius: 8px;
+    margin: 0 3px;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--primary-purple);
+    border-color: var(--primary-purple);
+}
+
+.pagination .page-link:hover {
+    background-color: var(--bg-cream);
+    border-color: var(--primary-purple);
+    color: var(--primary-purple-dark);
+}
+
+/* ============================================
+   ALERTS
+   ============================================ */
+.alert {
+    border-radius: 10px;
+    border: none;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+/* ============================================
+   INPUT GROUPS
+   ============================================ */
+.input-group .form-control {
+    border-radius: 10px 0 0 10px;
+}
+
+.input-group .btn {
+    border-radius: 0 10px 10px 0;
+}
+
+/* ============================================
+   CAROUSEL/OWL CAROUSEL
+   ============================================ */
+.owl-carousel .owl-item {
+    padding: 10px;
+}
+
+.owl-carousel .owl-nav button {
+    background-color: var(--primary-purple) !important;
+    color: var(--white) !important;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.owl-carousel .owl-nav button:hover {
+    background-color: var(--primary-purple-dark) !important;
+}
+
+.owl-carousel .owl-dots button span {
+    background-color: var(--accent-gold) !important;
+}
+
+.owl-carousel .owl-dots button.active span {
+    background-color: var(--primary-purple) !important;
+}
+
+/* ============================================
+   SEARCH SECTIONS
+   ============================================ */
+.expert-search-section {
+    background-color: var(--bg-cream-light);
+    padding: 20px 0;
+}
+
+/* ============================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================ */
+@media (max-width: 768px) {
+    .astroway-logo-text {
+        font-size: 18px;
+    }
+    
+    .astroway-logo-subtext {
+        font-size: 10px;
+    }
+    
+    .btn-chat {
+        padding: 6px 15px;
+        font-size: 14px;
+    }
+    
+    .heading {
+        font-size: 24px;
+    }
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.text-purple {
+    color: var(--primary-purple) !important;
+}
+
+.text-gold {
+    color: var(--accent-gold) !important;
+}
+
+.bg-purple {
+    background-color: var(--primary-purple) !important;
+}
+
+.bg-gold {
+    background-color: var(--accent-gold) !important;
+}
+
+.bg-cream {
+    background-color: var(--bg-cream) !important;
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* ============================================
+   SCROLLBAR STYLING
+   ============================================ */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-cream);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-purple);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-purple-dark);
+}
+
+/* ============================================
+   FAQ DETAILS STYLING
+   ============================================ */
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details[open] .icon {
+    transform: rotate(180deg);
+}
+
+details summary {
+    cursor: pointer;
+}
+
+/* ============================================
+   SERVICE BOX HOVER EFFECTS
+   ============================================ */
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12) !important;
+}
+
+.why-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.astrologer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* ============================================
+   HERO SECTION RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 40px 20px !important;
+        min-height: auto !important;
+    }
+    
+    .hero-content {
+        max-width: 100% !important;
+        text-align: center !important;
+        margin-bottom: 30px !important;
+    }
+    
+    .hero-content h1 {
+        font-size: 32px !important;
+        margin-left: 0 !important;
+    }
+    
+    .hero-img {
+        width: 100% !important;
+        max-width: 300px !important;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px !important;
+    }
+    
+    .why-cards {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    
+    .why-card {
+        width: 100% !important;
+        max-width: 300px !important;
+    }
+    
+    .astrologer-cards {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    
+    .astrologer-card {
+        width: 100% !important;
+        max-width: 300px !important;
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    .youtube-videos {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    
+    .video-card {
+        width: 90% !important;
+        max-width: 300px !important;
+    }
+    
+    .blog-cards {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    
+    .blog-card {
+        width: 90% !important;
+        max-width: 350px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 26px !important;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .product-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .about {
+        padding: 30px 20px !important;
+    }
+}
+
+/* ============================================
+   MENU ICON HOVER EFFECTS
+   ============================================ */
+.astroway-menu .icon:hover {
+    transform: scale(1.1);
+}
+
+.astroway-menu .icon img:hover {
+    transform: scale(1.1);
+}
+
+.astroway-menu a:hover .icon-desc {
+    color: var(--primary-purple) !important;
+}
+
+/* ============================================
+   ASTROLOGER CALL LIST PAGE STYLING
+   ============================================ */
+.expert-search-section {
+    background-color: #fff9f0 !important;
+}
+
+.psychic-card-modern {
+    background-color: #ffffff !important;
+    border-radius: 16px !important;
+    transition: all 0.3s ease !important;
+}
+
+.psychic-card-modern:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 8px 25px rgba(109, 78, 198, 0.15) !important;
+}
+
+.btn-audio-call {
+    background-color: #6d4ec6 !important;
+    color: #fff !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-audio-call:hover {
+    background-color: #5a3aa0 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(109, 78, 198, 0.3) !important;
+}
+
+.btn-video-call {
+    background-color: #e5b86a !important;
+    color: #fff !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-video-call:hover {
+    background-color: #d4a85a !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(229, 184, 106, 0.3) !important;
+}
+
+.btn-call-disabled {
+    background-color: #f5f5f5 !important;
+    color: #999 !important;
+    cursor: not-allowed !important;
+}
+
+/* Image error handling */
+.psyich-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.psyich-img {
+    background: linear-gradient(135deg, #f8f0dc 0%, #fff9f0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.psyich-img img[src=""],
+.psyich-img img:not([src]) {
+    display: none;
+}
+
+/* Search box styling */
+.search-box input:focus {
+    border-color: #6d4ec6 !important;
+    box-shadow: 0 0 0 0.2rem rgba(109, 78, 198, 0.15) !important;
+}
+
+/* Select dropdown styling */
+select:focus {
+    border-color: #6d4ec6 !important;
+    box-shadow: 0 0 0 0.2rem rgba(109, 78, 198, 0.15) !important;
+    outline: none !important;
+}
+

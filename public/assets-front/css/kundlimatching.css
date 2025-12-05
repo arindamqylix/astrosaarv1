@@ -1,0 +1,352 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #fcf6ee;
+  color: #242323;
+  min-height: 100vh;
+}
+
+/* Header Section */
+.kundli-header-bg {
+   background-color: #fff4e8;
+  position: relative;
+  padding: 50px 0;
+  text-align: center;
+  /* border-bottom: 2px solid #ece5d7; */
+}
+
+.kundli-header-stars::before,
+.kundli-header-stars::after {
+  content: "✨";
+  position: absolute;
+  font-size: 28px;
+  opacity: 0.6;
+}
+
+.kundli-header-stars::before {
+  left: 40px;
+  top: 18px;
+}
+
+.kundli-header-stars::after {
+  right: 42px;
+  top: 46px;
+}
+
+.kundli-header-content h1 {
+  font-size: 32px;
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+.kundli-header-content .subtitle {
+  font-size: 18px;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.kundli-content {
+  max-width: 1400px;
+  margin: 24px auto;
+  padding: 40px 80px;
+}
+
+.kundli-content h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.kundli-content .description {
+  font-size: 18px;
+  margin-bottom: 26px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  font-weight: 400;
+}
+
+.kundli-form-section {
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.kundli-form-card {
+  background: #fff;
+  border-radius: 9px;
+  box-shadow: 0 8px 32px rgb(0 0 0 / 7%);
+  flex: 1 1 390px;
+  display: flex;
+  flex-direction: column;
+  min-width: 600px;
+  max-width: 600px;
+  padding-bottom: 16px;
+}
+
+.tab-row {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px 0;
+  background: #ede5fa;
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+  color: #533f97;
+  cursor: pointer;
+  /* border-top-left-radius: 9px; */
+  /* border-top-right-radius: 9px; */
+}
+
+.tab.active {
+  background: #673abc;
+  color: #fff;
+}
+
+.form-row {
+  padding: 25px;
+  flex: 1;
+}
+
+.kundli-form {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.kundli-form-first {
+  display: flex;
+  flex-direction: column;
+}
+
+.kundli-form label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1d0d5e;
+}
+
+.required {
+  color: #e8534d;
+}
+
+.kundli-form input,
+.kundli-form select {
+  margin-top: 2px;
+  border: 1px solid #1d0d5e;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 1.01rem;
+  margin-bottom: 2px;
+  outline: none;
+  background: #f7f6fa;
+  transition: border 0.2s;
+}
+
+.kundli-form input:focus,
+.kundli-form select:focus {
+  border: 1.5px solid #7d57d1;
+  background: #fffdf9;
+}
+
+.form-group-flex {
+  display: flex;
+  gap: 10px;
+}
+
+.form-group-flex > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-generate {
+  margin-top: 13px;
+  padding: 11px 0;
+  width: 55%;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #ffb604 70%, #ffe093 120%);
+  color: #362100;
+  font-weight: 600;
+  font-size: 20px;
+  box-shadow: 0 2px 8px rgba(255, 196, 32, 0.07);
+  cursor: pointer;
+  transition: background 0.22s;
+}
+
+.btn-sign {
+  margin-top: 13px;
+  padding: 11px 0;
+  width: 55%;
+  border: none;
+  border-radius: 10px;
+  background: #624ea3;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  box-shadow: 0 2px 8px rgba(255, 196, 32, 0.07);
+  cursor: pointer;
+  transition: background 0.22s;
+}
+
+.btn-generate:hover {
+  background: linear-gradient(90deg, #f9a602 70%, #ffd165 130%);
+}
+
+.saved-kundli-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  min-height: 358px;
+  padding-bottom: 0;
+  max-width: 550px;
+}
+
+.saved-tabs {
+  border-radius: 9px 9px 0 0;
+}
+
+.saved-kundli-msg {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 38px 15px;
+  text-align: center;
+  color: #000000;
+  font-weight: 650;
+  font-size: 15px;
+}
+.form-table {
+  display: flex;
+  gap: 24px;
+}
+
+.kundli-footer-desc {
+  margin-top: 18px;
+  font-size: 20px;
+  color: #453b30;
+}
+
+/* Small desktops and large tablets */
+@media (max-width: 1200px) {
+  .kundli-content {
+    padding: 40px 40px; /* Slightly reduce side padding */
+    max-width: 100%;
+  }
+  .kundli-form-section {
+    gap: 16px;
+  }
+  .kundli-form-card {
+    min-width: auto;
+    max-width: 600px;
+  }
+  .saved-kundli-card {
+    max-width: 480px;
+  }
+}
+
+/* Tablets and medium screens */
+@media (max-width: 900px) {
+  .kundli-content {
+    padding: 30px 20px;
+  }
+  .kundli-form-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .kundli-form-card,
+  .saved-kundli-card {
+    max-width: 100%;
+    min-width: auto;
+    width: 100%;
+  }
+  .btn-generate,
+  .btn-sign {
+    width: 100%;
+  }
+  .kundli-header-bg {
+    padding: 24px 20px 18px 20px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 540px) {
+  .kundli-header-content h1 {
+    font-size: 1.6rem; /* Scale down heading */
+  }
+  .kundli-header-content .subtitle {
+    font-size: 1.1rem;
+  }
+  .kundli-content h2 {
+    font-size: 1.1rem;
+  }
+  .kundli-content .description,
+  .kundli-footer-desc {
+    font-size: 1rem;
+  }
+  .tab,
+  .kundli-form label {
+    font-size: 1rem;
+  }
+  .kundli-form-section {
+    padding: 0 10px;
+  }
+  .kundli-form {
+    gap: 10px;
+  }
+  .btn-generate,
+  .btn-sign {
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+  .form-row {
+    padding: 18px 7px 0 7px;
+  }
+  .saved-kundli-msg {
+    font-size: 1rem;
+    padding: 20px 4px;
+  }
+   .form-table {
+    flex-direction: column;
+  }
+
+  .kundli-form-card {
+    width: 100%;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+  .kundli-header-content h1 {
+    font-size: 1.3rem;
+  }
+  .kundli-header-content .subtitle {
+    font-size: 0.95rem;
+  }
+  .kundli-content h2 {
+    font-size: 1rem;
+  }
+  .btn-generate,
+  .btn-sign {
+    font-size: 0.9rem;
+  }
+   .form-table {
+    flex-direction: column;
+  }
+
+  .kundli-form-card {
+    width: 100%;
+  }
+}

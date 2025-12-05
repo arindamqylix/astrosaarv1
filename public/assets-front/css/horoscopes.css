@@ -1,0 +1,227 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333;
+}
+/* Header section */
+.compatibility-header {
+  background-color: #fff4e8;
+  text-align: center;
+  padding: 60px 20px 40px;
+  min-height: 200px;
+}
+
+.compatibility-header h1 {
+  font-size: 32px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+.compatibility-header p {
+  font-size: 18px;
+  margin-top: 8px;
+  color: #555;
+  font-weight: 500;
+}
+
+/* Info section */
+.compatibility-info {
+  background-color: #fff;
+  max-width: 1400px;
+  margin: 24px auto;
+  padding: 40px 80px;
+}
+
+.compatibility-info h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Purple Talk section */
+.talk-section {
+  background-color: #6946aa;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.talk-left {
+  flex: 1 1 60%;
+}
+
+.talk-left h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.talk-buttons button {
+  background-color: white;
+  border: none;
+  padding: 10px 20px;
+  color: #6946aa;
+  font-weight: 600;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.talk-right img {
+  width: 150px;
+  max-width: 100%;
+}
+
+/* Description section */
+.compatibility-description {
+  max-width: 1400px;
+  margin: 24px auto;
+  padding: 40px 80px;
+  /* color: #333; */
+}
+
+.compatibility-description p {
+  margin-bottom: 15px;
+}
+
+/* Choose Your Sign */
+.choose-sign {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fdf5f9;
+}
+
+.choose-sign h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #555;
+  font-family: "Fairplay", serif;
+}
+
+/* Zodiac Grid */
+.zodiac-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.zodiac-item {
+  padding: 15px;
+  font-size: 14px;
+  text-align: center;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.zodiac-item:hover {
+  transform: scale(1.05);
+}
+
+.zodiac-item img {
+  width: 100px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+
+/* Tablets (≤ 991px) */
+@media (max-width: 991px) {
+  .zodiac-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .talk-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .talk-left,
+  .talk-right {
+    flex: 1 1 100%;
+  }
+
+  .talk-right img {
+    margin-top: 20px;
+  }
+
+  .compatibility-header h1 {
+    font-size: 28px;
+  }
+
+  .compatibility-header p {
+    font-size: 16px;
+  }
+
+  .choose-sign h2 {
+    font-size: 22px;
+  }
+}
+
+/* Mobiles (≤ 767px) */
+@media (max-width: 767px) {
+  object {
+    height: 60px;
+  }
+
+  .compatibility-header {
+    padding: 40px 15px 30px;
+  }
+
+  .compatibility-header h1 {
+    font-size: 24px;
+  }
+
+  .compatibility-header p {
+    font-size: 15px;
+  }
+
+  .zodiac-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .zodiac-item img {
+    width: 80px;
+  }
+
+  .talk-buttons button {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .choose-sign h2 {
+    font-size: 20px;
+  }
+}
+
+/* Small Mobiles (≤ 480px) */
+@media (max-width: 480px) {
+  .zodiac-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .zodiac-item img {
+    width: 70px;
+  }
+
+  .talk-buttons button {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff9f0;
+  width: 400px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.header {
+  background-color: #6d4ec6;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  padding: 20px;
+  font-size: 22px;
+}
+
+.content {
+  padding: 30px 25px;
+  text-align: center;
+}
+
+.info {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 12px;
+  padding: 10px 15px;
+  border: 1px solid #f1f1f1;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  margin-bottom: 25px;
+}
+
+.flag-img {
+  width: 24px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.country-code {
+  color: #999;
+  font-size: 14px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+input[type="text"] {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+}
+
+.otp-btn {
+  background-color: #6d4ec6;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 14px 0;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background 0.3s ease;
+}
+
+.otp-btn:hover {
+  background-color: #5a3daf;
+}
+
+.terms {
+  font-size: 12px;
+  color: #333;
+}
+
+.terms a {
+  color: #000;
+  text-decoration: underline;
+}

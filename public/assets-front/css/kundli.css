@@ -1,0 +1,299 @@
+/* ========================== */
+/* 🌐 Global Styles */
+/* ========================== */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #fcf6ee;
+  color: #242323;
+  min-height: 100vh;
+}
+
+/* ========================== */
+/* 🌟 Header Section */
+/* ========================== */
+.kundli-header-bg {
+   background-color: #fff4e8;
+  position: relative;
+  padding: 50px 0;
+  text-align: center;
+  /* border-bottom: 2px solid #ece5d7; */
+}
+
+.kundli-header-stars::before,
+.kundli-header-stars::after {
+  content: "✨";
+  position: absolute;
+  font-size: 28px;
+  opacity: 0.6;
+}
+
+.kundli-header-stars::before {
+  left: 40px;
+  top: 18px;
+}
+
+.kundli-header-stars::after {
+  right: 42px;
+  top: 46px;
+}
+
+.kundli-header-content h1 {
+  font-weight: 700;
+  font-size: 32px;
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  letter-spacing: 0.5px;
+  
+}
+
+.kundli-header-content .subtitle {
+  font-size: 18px;
+  margin-top: 8px;
+   font-weight: 500;
+}
+
+/* ========================== */
+/* 📄 Content Section */
+/* ========================== */
+.kundli-content {
+  max-width: 1400px;
+  margin: 24px auto;
+  padding: 40px 80px;
+}
+
+.kundli-content h2 {
+   font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.kundli-content .description {
+  font-size: 18px;
+  margin-bottom: 26px;
+   font-family: 'Poppins', sans-serif;
+  color: #333;
+  font-weight: 400;
+}
+
+/* ========================== */
+/* 📝 Form Section */
+/* ========================== */
+.kundli-form-section {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.kundli-form-card {
+  background: #fff;
+  border-radius: 9px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.07);
+  flex: 1 1 390px;
+  max-width: 100%;
+  padding-bottom: 18px;
+}
+
+.tab-row {
+  display: flex;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px 0;
+  background: #ede5fa;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.04rem;
+  color: #533f97;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #673abc;
+  color: #fff;
+}
+
+.form-row {
+  padding: 25px 18px 0;
+}
+
+.kundli-form {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.kundli-form-first {
+  display: flex;
+  flex-direction: column;
+}
+
+.kundli-form label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1d0d5e;
+}
+
+.required {
+  color: #e8534d;
+}
+
+.kundli-form input,
+.kundli-form select {
+  margin-top: 2px;
+  border: 1px solid #1d0d5e;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  background: #f7f6fa;
+  transition: border 0.2s;
+  outline: none;
+}
+
+.kundli-form input:focus,
+.kundli-form select:focus {
+  border: 1.5px solid #7d57d1;
+  background: #fffdf9;
+}
+
+.form-group-flex {
+  display: flex;
+  gap: 10px;
+}
+
+.form-group-flex > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-generate {
+  margin-top: 13px;
+  padding: 11px 0;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #ffb604 70%, #ffe093 120%);
+  color: #362100;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.22s;
+}
+
+.btn-generate:hover {
+  background: linear-gradient(90deg, #f9a602 70%, #ffd165 130%);
+}
+
+/* ========================== */
+/* 💾 Saved Kundli Card */
+/* ========================== */
+.saved-kundli-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 358px;
+  padding-bottom: 0;
+  max-width: 500px;
+}
+
+.saved-tabs {
+  border-radius: 9px 9px 0 0;
+}
+
+.saved-kundli-msg {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 38px 15px;
+  text-align: center;
+  color: #000;
+  font-weight: 650;
+  font-size: 25px;
+}
+
+/* ========================== */
+/* 🧾 Footer Description */
+/* ========================== */
+.kundli-footer-desc {
+  margin-top: 18px;
+  font-size: 20px;
+  color: #453b30;
+}
+
+/* ========================== */
+/* 📱 Responsive Styles */
+/* ========================== */
+
+@media (max-width: 1024px) {
+  .kundli-content {
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .kundli-form-section {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .kundli-content {
+    padding: 20px 15px;
+  }
+
+  .kundli-header-bg {
+    padding: 32px 0 24px;
+  }
+
+  .kundli-header-content h1 {
+    font-size: 2rem;
+  }
+
+  .kundli-header-content .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .kundli-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .kundli-form label,
+  .tab {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .kundli-header-content h1 {
+    font-size: 1.3rem;
+  }
+
+  .kundli-header-content .subtitle {
+    font-size: 1rem;
+  }
+
+  .kundli-content h2 {
+    font-size: 1rem;
+  }
+
+  .kundli-content .description,
+  .kundli-footer-desc {
+    font-size: 0.94rem;
+  }
+
+  .form-row {
+    padding: 18px 8px 0;
+  }
+
+  .saved-kundli-msg {
+    font-size: 1rem;
+    padding: 24px 10px;
+  }
+
+  .btn-generate {
+    font-size: 1rem;
+  }
+}
