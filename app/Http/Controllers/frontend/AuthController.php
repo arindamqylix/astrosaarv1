@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
 use Symfony\Component\HttpFoundation\Session\Session;
-use Auth;
+use Auth; 
 
 class AuthController extends Controller
 {
